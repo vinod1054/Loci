@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_id": "loci-319b0",
+    "project_number": "682130636928",
+    "name": "Loci"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682130636928:android:bde4ed2b2bff6aff",
+        "client_id": "android:loci.vk.com.myapplication",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "loci.vk.com.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "682130636928-63mntlo3kdpo22jd6kdihd6pfltclvtl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "loci.vk.com.myapplication",
+            "certificate_hash": "1A67A8EFAEA3697D65EADF6E2EDEF6F4BA0CF573"
+          }
+        },
+        {
+          "client_id": "682130636928-ftid6fncm91k4tfuv7frcdqkr6a8jqau.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 2,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 2
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

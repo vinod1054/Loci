@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="loci.vk.com.myapplication">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".application.LociApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_location"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDsgCrhohIwnKT4x_MR34acttfCK8sYPuI" />
+
+        <activity android:name=".LoginActivity"></activity>
+        <activity
+            android:name=".TestPurpose.UsersListActivity"
+            android:label="@string/title_activity_show_users_list"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".SignInActivity"
+            android:label="@string/title_activity_sign_in"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <service
+            android:name=".services.LocationTrackerService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity
+            android:name=".LocationsList.LocationListActivity"
+            android:icon="@drawable/location_wait"
+            android:label="@string/title_activity_location_list"
+            android:theme="@style/mainTheme">
+
+        </activity>
+        <activity android:name=".addnewlocation.AddNewLocationActivity"
+            android:label="@string/add_new_location"
+            android:parentActivityName=".LocationsList.LocationListActivity">
+
+        </activity>
+        <activity
+            android:name=".TestPurpose.Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".locationdetails.LocationDestailsActivity"
+            android:parentActivityName=".LocationsList.LocationListActivity">
+
+        </activity>
+    </application>
+
+</manifest>
